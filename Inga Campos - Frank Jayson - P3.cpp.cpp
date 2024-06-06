@@ -40,7 +40,7 @@ void mostrarDetallesEmpleado(const Empleado& empleado) {
     cout << "Nombre: " << empleado.nombre << endl;
     cout << "Tipo de Empleado: " << (empleado.tipo == 'C' ? "Contratado" : "Nombrado") << endl;
     cout << fixed << setprecision(2);
-    cout << "Sueldo Básico: $" << empleado.sueldoBasico << endl;
+    cout << "Sueldo BÃ¡sico: s/." << empleado.sueldoBasico << endl;
     cout << "Deduccion AFP: $" << empleado.deduccionAFP << endl;
     cout << "Deduccion Seguro: $" << empleado.deduccionSeguro << endl;
     cout << "Bonificacion: $" << empleado.bonificacion << endl;
@@ -70,7 +70,7 @@ int main() {
         cin >> empleados[i].nombre;
         cout << "Ingrese el tipo de empleado (C-contratado, N-nombrado): ";
         cin >> empleados[i].tipo;
-        cout << "Ingrese el sueldo básico del empleado: ";
+        cout << "Ingrese el sueldo bÃ¡sico del empleado: ";
         cin >> empleados[i].sueldoBasico;
 
         empleados[i].deduccionAFP = calcularDeduccionAFP(empleados[i].sueldoBasico);
